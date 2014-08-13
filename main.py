@@ -37,16 +37,20 @@ class ProcessForm(webapp2.RequestHandler, object):
 		email = cgi.escape(self.request.get('email'))
 		message = cgi.escape(self.request.get('message'))
 		
-		if not mail.is_email_valid(email) and name == None and message == None:
+		fields = [name,email,message]
+		
+		if not mail.is_email_valid(fields[1]):
 			self.response.write('<h1>Por favor corrija os erros!</h1><br><h2><a href="/#contact">Voltar</a></h2>')
+		elif not fields:
+			self.response.write('<h1>Por favor insira algo!</h1><br><h2><a href="/#contact">Voltar</a></h2>')
 		else:
-			mensagem = mail.EmailMessage(sender="eagle.software3@gmail.com", subject="Mensagem do Portfolio - Nome: "+name+" Email:"+email)
+			mensagem = mail.EmailMessage(sender="eagle.software3@gmail.com", subject="Mensagem do Portfolio - Nome: "+fields[0]+" Email:"+fields[1])
 			mensagem.to = "youxuse.com@gmail.com"
-			mensagem.body = message
+			mensagem.body = fields[2]
 			mensagem.send()
 			
 			# as 'keys' do dictionario sao as variaveis da template
-			template_values = {'nome': name, 'email': email, 'mensagem': message,}
+			template_values = {'nome': fields[0], 'email': fields[1], 'mensagem': fields[2],}
 			template = jinjaenvironment.get_template('info.html')
 			self.response.write(template.render(template_values))
 
