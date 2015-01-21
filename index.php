@@ -557,7 +557,7 @@
 							<p>The website that you see here developed in PHP!<br>Project licensed under <a href="http://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL v.3</a></p>
 							<ul class="list-inline item-details">
 								<li>
-									<strong><a href="https://github.com/filipe-marques/portfolio-filipe">Project portfolio-filipe</a></strong>
+									<strong><a href="https://github.com/filipe-marques/portfoliofilipe">Project portfolio-filipe</a></strong>
 								</li>
 							</ul>
 							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

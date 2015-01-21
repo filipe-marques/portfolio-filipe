@@ -1,3 +1,4 @@
-index.yaml
+﻿index.yaml
 *.pyc
+.openshift/
 
