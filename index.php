@@ -413,7 +413,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						Copyright &copy; 2014 2015 2016 Filipe Marques &dash; The code of this website is software with freedom, licenced under <a href="http://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL v.3</a> &dash; <a href="https://github.com/filipe-marques/portfolio-filipe">Contribute ?</a>
+						Copyright &copy; 2014 2015 2016 Filipe Marques &dash; The code of this website is software with freedom, licenced under <a href="http://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL v.3</a> &dash; <a href="https://github.com/filipe-marques/portfoliofilipe">Contribute ?</a>
 					</div>
 				</div>
 			</div>
